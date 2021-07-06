@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Tab content - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="hero">
+<div class="btn-box">
+<button id="btn1" onclick="openHTML()"><i class="fa fa-html5"></i>HTML</button>
+<button id="btn2" onclick="openCSS()"><i class="fa fa-css3"></i>CSS</button>
+<button id="btn3" onclick="openJS()"><i class="fa fa-codepen"></i>JAVASCRIPT</button>
+</div>
+        <div id="content1" class="content">
+            <div class="content-left">
+                <h1>WESTERN DESERT</h1>
+                <p>The Western Desert of Egypt is an area of the Sahara that lies west of the river Nile, up to the Libyan border, and south from the Mediterranean sea to the border with Sudan. It is named in contrast to the Eastern Desert which extends east from the Nile to Red Sea. The Western Desert is mostly rocky desert, though an area of sandy desert, known as the Great Sand Sea, lies to the west against the Libyan border. The desert covers an area of 680,650 km2 (262,800 sq mi) which is two-thirds of the land area of the country.[1] Its highest elevation is 1,000 m (3,300 ft) in the Gilf Kebir plateau to the far south-west of the country, on the Egypt-Sudan-Libya border. The Western Desert is barren and uninhabited save for a chain of oases which extend in an arc from Siwa, in the north-west, to Kharga in the south. It has been the scene of conflict in modern times, particularly during the Second World War.</p>
+                <a href="#">WATCH VIDEO</a>
+            </div>
+            <div class="content-right">
+                <img src="pic-1.png">
+            </div>
+        </div>
+        <div id="content2" class="content">
+            <div class="content-left">
+                <h1>Ei Bagawat</h1>
+                <p>El Bagawat, is an ancient Christian cemetery, one of the oldest in the world, which functioned at the Kharga Oasis in southern-central Egypt from the 3rd to the 7th century AD. It is one of the earliest and best preserved Christian cemeteries from the ancient world.
+															The El Bagawat cemetery is reported to be pre-historic and is one of the oldest Christian cemeteries in Egypt. Before Christianity was introduced into Egypt, it was a burial ground used by the non-Christians and later years by the Christians. The chapels here are said to belong to both the eras. Coptic frescoes of the 3rd to the 7th century are found on the walls. There are 263 funerary chapels, of which the Chapel of the Exodus (first half of the 4th century) and Chapel of Peace (5th or 6th century) have the best-preserved frescoes, although fresco fragments can also be seen in Chapels 25, 172, 173, 175, and 210.</p>
+                <a href="#">WATCH VIDEO</a>
+            </div>
+            <div class="content-right">
+                <img src="pic-1.png">
+            </div>
+        </div>
+        <div id="content3" class="content">
+            <div class="content-left">
+                <h1>Pyramid of Giza</h1>
+                <p>The Great Pyramid of Giza of Egypt is a huge pyramid built by the Ancient Egyptians. It stands 18.4 km from Cairo, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain mostly intact. When it was built it was 146.5 metres (481 feet) tall. It was the tallest building in the world for over 3,800 years. Erosion and other causes have shrunk it to 138.8 m. The pyramid was probably built for Khufu, an Egyptian pharaoh. It was perhaps built by Khufu's vizier, Hemiunu.It is believed that it took about 20 years to build, and was completed around 10,000 BC.
+															When it was built, the Great Pyramid was covered by white stones that formed a smooth outer surface. Some of these stones can still be seen around the base. Most of what can be seen of the pyramid now is its basic core of 2,300,000 blocks of limestone and granite. There have been many different theories to explain how the pyramid was built. Most accepted building ideas are based on the idea of moving huge stones from a quarry and dragging and lifting them into place. Archaeologists found that the Pyramids of Giza were not built by slaves, but workers who were paid for working. Their graves were found near the pyramid in 1990.	</p>
+                <a href="#">WATCH VIDEO</a>
+            </div>
+            <div class="content-right">
+                <img src="pic-3.png">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        
+        function openHTML(){
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            btn1.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+        }
+        function openCSS(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+            btn2.style.color = "#ff7846";
+            btn1.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0.3s";
+            content3.style.transitionDelay = "0s";
+        }
+        function openJS(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            btn3.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn1.style.color = "#000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0.3s";
+        }
+        
+    </script>
+    
+  
+</body>
+</html> 
